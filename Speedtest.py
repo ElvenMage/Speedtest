@@ -39,13 +39,11 @@ speedtest_button = Button(
 # Labels
 download_label = Label(
     root,
-    text="a",
     font=("Arial", 15)
     )
 
 upload_label = Label(root,
-                     font=("Arial", 15),
-                     text="b"
+                     font=("Arial", 15)
                      )
 
 canvas.create_window(300,
