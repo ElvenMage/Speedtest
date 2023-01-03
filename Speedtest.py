@@ -16,12 +16,10 @@ canvas.pack()
 def testspeed():
     speed = speedtest.Speedtest()
     root.title("Testing...")
-    download_text = round(speed.download())/1000/1000
-    upload_text = round(speed.upload())/1000/1000
-    new_text = str(download_text) + "Mbps"
-    new_text2 = str(upload_text) + "Mbps"
-    download_label.config(text=new_text)
-    upload_label.config(text=new_text2)
+    download_text = str(round(speed.download())/1000/1000) + " Mbps"
+    upload_text = str(round(speed.upload())/1000/1000) + " Mbps"
+    download_label.config(text=download_text)
+    upload_label.config(text=upload_text)
     root.title("Speedtest")
 
 
